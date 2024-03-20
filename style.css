@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: 0;
+}
+
+body {
+    background-color: rgb(169, 217, 228);
+}
+
+header {
+    background-color: #0b6487;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+header .logo a {
+    font-size: 25px;
+    color: aqua;
+    text-decoration: 0;
+    display: flex;
+}
+
+header .logo {
+    margin-top: 0;
+    display: flex;
+}
+
+header .logo a span {
+    color: #ffff;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin: 15px;
+    list-style-type: none;
+}
+
+.menu li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.btn-reservation {
+    color: aqua;
+    font-size: 14px;
+    border: 2px solid aqua;
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+    position: relative;
+}
+
+.btn-reservation:hover {
+    background-color: aqua;
+    color: #fff;
+}
+#home .btn-reservation{
+    margin-top: 70vh;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+    border: 2px solid #fff;
+}
+#home {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+   
+}
+
+.recherche {
+    background-color: #222;
+    padding: 15px;
+    width: 70%;
+    position: absolute;
+    bottom: -50px;
+    
+}
+
+.recherche form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+   margin-left: 23%;
+}
+
+.recherche form div,
+.recherche form input[type="submit"] {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.recherche form label {
+    color: #999;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.recherche input {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 1px solid aqua;
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+}
+
+.recherche form input[type="submit"] {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: aqua;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-right: 70vh;
+}
+
+.recherche input[type="submit"]:hover {
+    box-shadow: 0 0 10px aqua;
+}
+
+#propos {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 10%;
+    width: 100%;
+}
+#propos p{
+    font-size: 25px;
+}
+.nom{
+    color: brown;
+    font-weight: bold;
+   
+}
+
+.titre {
+    text-transform: capitalize;
+    margin: 70px 0;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.titre::after {
+    position: absolute;
+    left: -15px;
+    content: "";
+    height: 100%;
+    background-color: #171515;
+    width: 5px;
+}
+
+
+#Destination {
+    padding: 0 10%;
+    margin-bottom: 30px;
+}
+
+#Destination .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+
+}
+
+#Destination .content .box {
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    transition: 0.5s;
+}
+
+#Destination .content .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+
+.box .content h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #222;
+
+}
+
+.box .content p {
+    padding: 2px;
+    font-size: 12px;
+    color: #222;
+}
+
+
+
+.box .content a {
+    margin-top: 60px;
+    padding: 60px;
+    border: 2px solid aqua;
+    color: aqua;
+    font-weight: bold;
+    padding-bottom: 1%;
+}
+
+.box:hover {
+    box-shadow: 0 0 10px aqua;
+    border-radius: 60px;
+}
+
+.box:hover .content {
+    transform: translate(0);
+}
+
+#contact {
+    padding: 0 10%;
+    margin-bottom: 50px;
+    height: 90vh;
+}
+
+#contact form {
+    background-color: #fff;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.left-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.left-right .left,
+.left-right .right {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+#contact form label {
+    font-size: 14px;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+#contact form input {
+    padding: 8px;
+    outline: 0;
+    border: 1px solid #999;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+    outline: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+#contact form input:focus,
+textarea:focus {
+    border: 1px solid aqua;
+}
+
+iframe {
+    height: 150px;
+    width: 100%;
+}
+
+#contact button {
+    width: fit-content;
+    padding: 8px 40px;
+    background-color: black;
+    border: 1px solid black;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#contact button:hover {
+    letter-spacing: 1px;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer p span {
+    color: aqua;
+}
+
+.footer .bas-conteneur {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    gap: 2em;
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+}
+
+
+.footer .bas-conteneur .bas a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+
+footer {
+    background-color: #0b6487;
+    text-align: center;
+  
+}
+
+.footer .bas-conteneur .bas h3 {
+    color: white;
+    font-size: 20px;
+    display: block;
+   border:solid 1px #fff;
+}
+
+.videosection {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+
+.videobackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+ 
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding-top: 20vh;
+    font-size: 20px;
+}
